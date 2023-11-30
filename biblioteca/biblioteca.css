@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Prompt:wght@600&display=swap');
+/* -------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------- */
+body{
+    display: flex;
+    margin: 0%;
+    gap: 10px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Mukta', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.body{
+    background-color: #000000;
+    font-family: 'Mukta', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+/* --------------------------------------Parte izquierda-------------------------------------- */
+.cont-izquierdo{
+    position: relative;
+    top: 0%;
+    left: .2%;
+    height: 100vh;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    border-radius: .8rem;
+}
+.inicio_buscador{
+    position: absolute;
+    top: 1%;
+    height: 25%;
+    width: 100%;
+    background-color: #0F0F0F;
+    border-radius: .8rem;
+}
+.inicio{
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    gap: 25px;
+}
+.inicio a{
+    font-family: 'Mukta', sans-serif;
+    margin-top: 2%;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.774);
+    font-size: 23px;
+}
+.inicio a:hover{
+    color: white;
+}
+.inputBox_container {
+    
+    position: relative;
+    top: 63%;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    width: 65%;
+    height: 25%;
+    background-color: #3636369c;
+    border-radius: 0.8em;
+    overflow: hidden;
+  }
+  
+  .search_icon {
+    height: 1em;
+    padding: 0 0.5em 0 0.8em;
+    fill: #d6d6d6;
+  }
+  
+  .inputBox {
+
+    background-color: transparent;
+    color: #ffffff;
+    outline: none;
+    width: 100%;
+    border: 0;
+    padding: 0.5em 1.5em 0.5em 0;
+    font-size: 1em;
+  }
+  
+  ::placeholder {
+    font-family: 'Mukta', sans-serif;
+    color: #fdfdfdb9;
+  }
+
+
+/* -----------------------contenido playlist------------------ */
+.playlist{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    bottom: 1%;
+    height: 71%;
+    width: 100%;
+  background-color: #0F0F0F;
+    border-radius: .8rem;
+}
+.playlist select{
+    position: relative;
+    left: 20%;
+}
+.cabeceraPlaylist{
+    height: 16%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cabeceraPlaylist p{
+    color: #d6d6d6d3;
+    font-size: 23px;
+    margin-left: 3%;
+}
+.cabeceraPlaylist i{
+    color: #d6d6d6d3;
+    font-size: 28px;
+    margin-right: 2%;
+}
+.playlist_contenedor{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 88%;
+    overflow-y: scroll;
+    
+}
+.playlist_contenedor::-webkit-scrollbar{
+    width: 10px;
+    height: 20px;
+    background: #2520295b;
+    border-radius: .5rem;
+    
+}
+.playlist_contenedor::-webkit-scrollbar-thumb{
+    background: #c6c5c7;
+    border-radius: 20px;
+    
+}
+.favoritos{
+    display: flex;
+    gap: 30px;
+    height: 20%;
+    width: 100%;
+   transition: 500ms;
+   align-items: center;
+}
+.favoritos:hover{
+    background-color: #ffffff21;
+}
+.favoritos img{
+    padding-bottom: .3%;
+    padding-left: 2%;
+    height: 90%;
+    width: 18%;
+    border-radius: .5rem;
+}
+.favoritos span{
+    cursor: default;
+    color: #e0dfe0;
+    font-size: 17px;
+}
+.favoritos i{
+    position: absolute;
+    top: 30%;
+    right: 66%;
+    font-size: 20px;
+    color: purple;
+}
+
+
+.playlist_individual{
+    display: flex;
+    gap: 30px;
+    height: 23%;
+    width: 100%;
+   transition: 500ms;
+   align-items: center;
+}
+.playlist_individual:hover{
+    background-color: #ffffff21;
+}
+.playlist_individual img{
+    padding-bottom: .3%;
+    padding-left: 2%;
+    height: 90%;
+    width: 18%;
+    border-radius: .5rem;
+}
+.playlist_individual span{
+    cursor: default;
+    color: #e0dfe0;
+    font-size: 17px;
+}
+
+/* ---------------------------------------------Parte derecha--------------------------------------------------------- */
+.cont-derecho{
+    position: relative;
+    top: 0%;
+    right: 0%;
+    height: 99.3vh;
+    width: 73vw;
+    background-color: #0F0F0F;
+    border-radius: .8rem;
+}
+
+/*------------------------------------contenido parte derechaa-------------------------------------------------------------------------------------*/
+
+.portada_playlist{
+    margin-top: 15%;
+    margin-left: 19%;
+    border-radius: 5%;
+}
+
+#datos_playlist{
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.titulo_playlist{
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-size: 190%;
+    margin: 0;
+}
+
+.creador_playlist{
+    color: rgb(122, 114, 114);
+    font-family: 'Mukta', sans-serif;
+    font-size: 105%;
+    margin-left: 0.2%;
+}
+
+#cont_canciones{
+    background-color: #080808c0;
+    width: 90%;
+    height: 120%;
+    margin-top: 10%;
+    border-radius: 5%;
+    overflow-x: hidden;
+}
+
+
+#canciones{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.titulo_canciones{
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+.nombre_artista{
+    color: rgb(122, 114, 114);
+    font-size: 90%;
+}
+
+#nro_cancion{
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+#play_pause{
+    border-radius: 100%;
+    color: #2a0236;
+    font-size: 190%;
+    margin-top: 3%;
+}
+
+#estrella_favs input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  #estrella_favs {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  #estrella_favs svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s;
+    fill: none;
+    stroke: #ffffff;
+    margin-top: 47%;
+  }
+  
+  #estrella_favs svg:hover {
+    transform: scale(1.1);
+  }
+  
+  #estrella_favs input:checked ~ svg {
+    fill: purple;
+    stroke: purple;
+  }
+    
+
+  .reproductor{
+    transition: 1s;
+    opacity: 0;
+    z-index: 10;
+    position: fixed;
+    bottom: 0%;
+    height: 13%;
+    width: 150vw;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.portada{
+    position: relative;
+    top: 0%;
+    left: -11%;
+    height: 100%;
+    width: 30%;
+}
+
+.titulo_portada{
+    position: relative;
+    left: 20%;
+    top: 20%;
+    color: #ffffff;
+}
+.artista_portada{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+    color: #919191b9;
+
+}
+.cont_reproductor{    
+    position: relative;
+    left: -16%;
+    height: 100%;
+    width: 35%;
+    
+}
+.portada img{
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    width: 18%;
+    border-radius: .5rem;
+}
+
+.tiempo-actual{
+    position: relative;
+    top: 33.3%;
+    left: -14.6%;
+    color: #ffffffc9;
+    font-size: 10px;
+}
+
+.tiempo-duracion{
+    position: relative;
+    top: 33.3%;
+    left: 22%;
+    color: #ffffffc9;
+    font-size: 10px;
+}
+
+.deslizador-audio{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ddddddf6;
+    cursor: pointer;
+    -webkit-appearance:none;
+    overflow: hidden;
+}
+.deslizador-audio::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 1px;
+    box-shadow: -400px 0 0  400px #370d68c5;
+}
+
+.controles{
+    width: 100%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#next_btn{
+    font-size: 38px;
+    color: #dfdeded2;
+}
+
+#next_btn:hover{
+    color: #ffffffda;
+}
+
+#previous_btn{
+    font-size: 38px;
+    color: #dfdeded2;
+}
+
+#previous_btn:hover{
+    color: #ffffffda;
+}
+
+#play_pausa{
+    font-size: 38px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    color: #000000;
+    margin-top: 1%;
+}
+
+
+
+#cerrar_reproductor{
+    opacity: 1;
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    font-size: 38px;
+    color: #ffffff; 
+    cursor: pointer;
+}
+
+.iconos{
+    display: flex;
+    justify-content:space-around;
+    position: absolute;
+    top: 0%;
+    right: 7%;
+    height: 100%;
+    width: 8%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.iconos i{
+    margin-top: 22%;
+    transition: 400ms;
+    font-size: 30px;
+    color: #ffffff;
+}
+.iconos i:hover{
+    color: purple;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Prompt:wght@600&display=swap');
+
+body{
+    background-color: #080808;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background: #252029;
+    
+}
+body::-webkit-scrollbar-thumb{
+    
+    background: #c6c5c7;
+    border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background: #3f3f3f;
+}
+
+.body_album{
+    background: linear-gradient(to bottom, #a3743e, #080808 );
+    margin-left: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.portada_album{
+    margin-top: 12%;
+    margin-left: 17%;
+}
+
+#tituloyartista{
+    margin-left: 18.5%;
+}
+
+.titulo_album{
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-size: 290%;
+    margin: 0;
+}
+
+.datos_album{
+    color: rgb(122, 114, 114);
+    font-family: 'Mukta', sans-serif;
+    font-size: 105%;
+    margin-left: 0.2%;
+}
+
+
+#column{
+    margin: 1%;
+}
+
+
+#cont_canciones{
+    background-color: #080808c0;
+    width: 85%;
+    height: 550px;
+    margin-top: 4%;
+    margin-left: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5% 0% 0% 5%;
+}
+#cont_canciones::-webkit-scrollbar{
+    width: 10px;
+    background: #252029;
+    
+}
+#cont_canciones::-webkit-scrollbar-thumb{
+    
+    background: #c6c5c7;
+    border-radius: 20px;
+}
+#cont_canciones::-webkit-scrollbar-thumb:hover{
+    background: #3f3f3f;
+}
+
+#canciones{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.titulo_canciones{
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    text-decoration: none;
+    font-size: 140%;
+}
+
+.nombre_artista{
+    color: rgb(122, 114, 114);
+    font-size: 90%;
+}
+
+#nro_cancion{
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+/*empieza el style del corazoncito*/
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    position:relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .container svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s;
+    fill: none;
+    stroke: #666;
+  }
+  
+  .container svg:hover {
+    transform: scale(1.1);
+  }
+  
+  .container input:checked ~ svg {
+    fill: purple;
+    stroke: purple;
+  }
+  
+/*termina style del like corazoncito*/
+
+#play_pause{
+    border-radius: 100%;
+    color: #000000;
+    font-size: 190%;
+    margin-top: 3%;
+}
+
+
+/*empieza estrellita añadir a fav*/
+#estrella_favs input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  #estrella_favs {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  #estrella_favs svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s;
+    fill: none;
+    stroke: #ffffff;
+    margin-top: 47%;
+  }
+  
+  #estrella_favs svg:hover {
+    transform: scale(1.1);
+  }
+  
+  #estrella_favs input:checked ~ svg {
+    fill: purple;
+    stroke: purple;
+  }
+    
+/*termina estrellita*/
+
+.material-symbols-outlined{
+    color: white;
+    margin-top: 13%;
+    cursor: pointer;
+}
+
